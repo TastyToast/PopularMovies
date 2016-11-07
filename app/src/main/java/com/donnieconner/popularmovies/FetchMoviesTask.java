@@ -108,7 +108,7 @@ public class FetchMoviesTask extends AsyncTask<String, Void, List<Movie>> {
 
     @Override
     protected void onPostExecute(List<Movie> movies) {
-        mActivity.hideProgressBar();
+        //mActivity.hideProgressBar();
 
         if (mInitialLoad) {
             mActivity.renderPosterGrid(movies);
